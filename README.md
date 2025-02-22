@@ -56,6 +56,15 @@ docker-compose build
 docker-compose up -d
 ```
 
+### Docker command
+#### build image
+```shell
+docker build --platform linux/amd64 -t zf/ai-codereview:0.1.0 .
+```
+#### run
+```shell
+docker run -itd -p 8080:8080 --env-file ./.env --platform linux/amd64 --name ai-codereview zf/ai-codereview:0.1.0
+```
 
 ## Usage
 
